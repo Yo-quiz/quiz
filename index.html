@@ -10,45 +10,61 @@
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         h1 {
-            margin-top: 50px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
             font-size: 3rem;
         }
 
-        #language-selection {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 50px;
-            box-sizing: border-box;
+        p {
+            text-align: center;
+            color: white;
+            margin: 0;
+            font-size: 1.5rem;
         }
 
-        .language {
-            width: 150px; /* Aumentar tamaño de las imágenes */
+        .language-selection {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 10%;
+            margin-bottom: 0;
+        }
+
+        .language-selection img {
+            width: 30%; /* Ajusta el tamaño */
+            max-width: 200px;
             cursor: pointer;
         }
 
-        #select-text {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+        .language-selection img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
 <body>
     <h1>WELCOME TO YO-QUIZ</h1>
-    <p id="select-text">Select your language</p>
-    <div id="language-selection">
-        <img src="spanish.png" alt="Spanish" class="language" onclick="window.location.href='https://yo-quiz.github.io/quiz/'">
-        <img src="french.png" alt="French" class="language" onclick="window.location.href='https://yo-quiz.github.io/frc/'">
-        <img src="english.png" alt="English" class="language" onclick="window.location.href='https://yo-quiz.github.io/eng/'">
+    <p>Select your language</p>
+    <div class="language-selection">
+        <a href="https://yo-quiz.github.io/quiz/">
+            <img src="img/spanish.png" alt="Spanish">
+        </a>
+        <a href="https://yo-quiz.github.io/frc/">
+            <img src="img/french.png" alt="French">
+        </a>
+        <a href="https://yo-quiz.github.io/eng/">
+            <img src="img/english.png" alt="English">
+        </a>
     </div>
 </body>
+</html>
+
 </html>
