@@ -3,55 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yo-quiz</title>
+    <title>Welcome to Yo-Quiz</title>
     <style>
         body {
             background: linear-gradient(to bottom, #00aaff, #006699); /* Gradiente de azul claro a azul oscuro */
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
-            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: center;
+            height: 100vh;
         }
 
         h1 {
-            text-align: center;
             color: white;
-            margin-top: 20px;
             font-size: 3rem;
+            margin-top: 2rem;
+            text-align: center;
         }
 
         p {
-            text-align: center;
             color: white;
-            margin: 0;
             font-size: 1.5rem;
+            margin: 0;
+            text-align: center;
         }
 
         .language-selection {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: flex-end;
-            padding: 0 10%;
-            margin-bottom: 0;
+            width: 100%;
+            padding-bottom: 1rem;
         }
 
         .language-selection img {
-            width: 30%; /* Ajusta el tamaño */
+            width: 30%;
             max-width: 200px;
+            height: auto;
             cursor: pointer;
         }
 
         .language-selection img:hover {
             transform: scale(1.1);
-            transition: transform 0.3s ease;
+            transition: transform 0.2s;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Yo-quiz!</h1>
+    <h1>WELCOME TO YO-QUIZ</h1>
     <p>Select your language</p>
     <div class="language-selection">
         <a href="https://yo-quiz.github.io/quiz/">
@@ -65,6 +67,4 @@
         </a>
     </div>
 </body>
-</html>
-
 </html>
