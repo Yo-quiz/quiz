@@ -6,64 +6,49 @@
     <title>Welcome to Yo-Quiz</title>
     <style>
         body {
+            background: linear-gradient(to bottom, #00aaff, #006699); /* Gradiente de azul claro a azul oscuro */
+            background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
             color: white;
-            background: linear-gradient(135deg, #1e90ff, #ff6347);
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            text-align: center;
         }
 
         h1 {
-            margin-top: 20px;
+            margin-top: 50px;
             font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        p {
-            font-size: 1.5rem;
-            margin-top: -10px;
-        }
-
-        .language-selection {
+        #language-selection {
             position: fixed;
-            bottom: 20px;
+            bottom: 0;
             left: 0;
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
+            padding: 10px 50px;
+            box-sizing: border-box;
         }
 
-        .language-selection img {
-            width: 100px;
-            height: auto;
+        .language {
+            width: 150px; /* Aumentar tamaño de las imágenes */
             cursor: pointer;
-            transition: transform 0.2s ease;
         }
 
-        .language-selection img:hover {
-            transform: scale(1.1);
+        #select-text {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Yo-quiz!</h1>
-    <p>Select your language</p>
-
-    <div class="language-selection">
-        <a href="https://yo-quiz.github.io/quiz/">
-            <img src="spanish.png" alt="Spanish">
-        </a>
-        <a href="https://yo-quiz.github.io/frc/">
-            <img src="french.png" alt="French">
-        </a>
-        <a href="https://yo-quiz.github.io/eng/">
-            <img src="english.png" alt="English">
-        </a>
+    <h1>WELCOME TO YO-QUIZ</h1>
+    <p id="select-text">Select your language</p>
+    <div id="language-selection">
+        <img src="spanish.png" alt="Spanish" class="language" onclick="window.location.href='https://yo-quiz.github.io/quiz/'">
+        <img src="french.png" alt="French" class="language" onclick="window.location.href='https://yo-quiz.github.io/frc/'">
+        <img src="english.png" alt="English" class="language" onclick="window.location.href='https://yo-quiz.github.io/eng/'">
     </div>
 </body>
 </html>
