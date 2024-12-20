@@ -1,19 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yo-kai Quiz</title>
+    <title>Welcome to Yo-Quiz</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #00aaff, #006699); /* Gradiente de azul claro a azul oscuro */
-            background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #1e90ff, #ff6347);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-       
-    <script src="script.js"></script>
+        h1 {
+            margin-top: 20px;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-top: -10px;
+        }
+
+        .language-selection {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .language-selection img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .language-selection img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Yo-quiz!</h1>
+    <p>Select your language</p>
+
+    <div class="language-selection">
+        <a href="https://yo-quiz.github.io/quiz/">
+            <img src="spanish.png" alt="Spanish">
+        </a>
+        <a href="https://yo-quiz.github.io/frc/">
+            <img src="french.png" alt="French">
+        </a>
+        <a href="https://yo-quiz.github.io/eng/">
+            <img src="english.png" alt="English">
+        </a>
+    </div>
 </body>
 </html>
-
