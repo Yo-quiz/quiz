@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Yo-Quiz</title>
     <style>
-        body {
-            background: linear-gradient(to bottom, #00aaff, #006699); /* Gradiente de azul claro a azul oscuro */
-            background-size: cover;
+        html, body {
             margin: 0;
+            padding: 0;
+            height: 100%; /* Asegura que html y body ocupen toda la pantalla */
+            background: linear-gradient(to bottom, #00aaff, #006699); /* Gradiente azul claro a oscuro */
+            background-size: 100% 100%; /* Cubre todo el área disponible */
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            height: 80vh;
         }
 
         h1 {
